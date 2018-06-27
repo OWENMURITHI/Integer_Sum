@@ -1,0 +1,34 @@
+<DOCTYPE <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Integers </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <input id="result" value="RESULT" type="button" onclick="myResult()">
+    </body>
+    <script>
+        var sum = 0;
+        var i;
+        var num = prompt("Enter the final limit");
+        var n = parseInt(num);
+        var multiple = prompt("enter the test multiple");
+        var m = parseInt(multiple);
+
+        function myResult() {
+            for (i = 1; i <= n; i++) {
+                if (i % m === 0) {
+                    sum += i;
+                }
+            }
+            alert(sum);
+        }
+    </script>
+
+    </html>
